@@ -1,0 +1,8 @@
+# Module 1 first PoC
+# Expected OUT = 12 when A = 5 and B = 7
+
+LOAD R1, A
+LOAD R2, B
+ADD  R1, R2
+STORE OUT, R1
+HALT

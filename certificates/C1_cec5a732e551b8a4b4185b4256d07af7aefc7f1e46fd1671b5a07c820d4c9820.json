@@ -1,0 +1,111 @@
+{
+  "aml_ir": {
+    "aml_ir_hash": "284c4440cfef6a93085ba06c2baae28936830b973b1f96680b83c869a7573788",
+    "instruction_count": 5,
+    "label_table": {},
+    "symbol_table": [
+      "A",
+      "B",
+      "OUT"
+    ]
+  },
+  "certificate_hash": "b5267c821f2c52f0734ebd899b129e3296947f1a3a1073e77dd26b26f98167b8",
+  "claims": {
+    "formal_proof": false,
+    "universal_claim": false,
+    "verification_scope": "SINGLE_EXECUTION_INSTANCE",
+    "verification_type": "EMPIRICAL"
+  },
+  "complexity": {
+    "aml_steps": 5,
+    "expansion_ratio": 63.6,
+    "utm_steps": 318,
+    "utm_tape_usage": 48
+  },
+  "execution": {
+    "aml_halted": true,
+    "aml_observable_result": {
+      "A": 5,
+      "B": 7,
+      "OUT": 12
+    },
+    "aml_status": "SUCCESS",
+    "aml_step_count": 5,
+    "utm_halted": true,
+    "utm_observable_result": {
+      "A": 5,
+      "B": 7,
+      "OUT": 12
+    },
+    "utm_status": "SUCCESS",
+    "utm_step_count": 318,
+    "utm_tape_usage": 48
+  },
+  "identity": {
+    "certificate_id": "C1_cec5a732e551",
+    "certificate_type": "C1_TRANSLATION_EMPIRICAL_VERIFICATION",
+    "certificate_version": "1.0",
+    "module": "Module 1",
+    "stage": "Stage 11",
+    "status": "VERIFIED"
+  },
+  "observation": {
+    "Obs_AML": {
+      "A": 5,
+      "B": 7,
+      "OUT": 12
+    },
+    "Obs_UTM": {
+      "A": 5,
+      "B": 7,
+      "OUT": 12
+    }
+  },
+  "provenance": {
+    "AML_version": "v0.1",
+    "UTM_model_version": "1.0",
+    "compiler_version": "0.1",
+    "module_version": "0.1",
+    "simulator_version": "1.0",
+    "translator_version": "1.0",
+    "verifier_version": "1.0"
+  },
+  "scope": {
+    "input_state": {
+      "A": 5,
+      "B": 7
+    },
+    "max_steps": 100000,
+    "scope": "SINGLE_EXECUTION_INSTANCE"
+  },
+  "source": {
+    "source_hash_algorithm": "sha256",
+    "source_language": "AML",
+    "source_language_version": "v0.1",
+    "source_program": "\n        LOAD R1, A\n        LOAD R2, B\n        ADD  R1, R2\n        STORE OUT, R1\n        HALT\n",
+    "source_program_hash": "cec5a732e551b8a4b4185b4256d07af7aefc7f1e46fd1671b5a07c820d4c9820"
+  },
+  "translation": {
+    "deterministic_translation": true,
+    "generated_utm_valid": true,
+    "translation_status": "TRANSLATION_GENERATED",
+    "translator_version": "1.0"
+  },
+  "utm_ir": {
+    "alphabet_size": 57,
+    "blank_symbol": "_",
+    "halt_state": "q_halt",
+    "initial_state": "q_start",
+    "state_count": 8444,
+    "transition_count": 8794,
+    "utm_ir_hash": "9d8cc627a3e33a43a3e42765832f9ad93f5d3d24c2cd0db6722ebfcc5ce37e21"
+  },
+  "verification": {
+    "halting_equal": true,
+    "mismatch_reason": null,
+    "observation_equal": true,
+    "verification_method": "EMPIRICAL_SEMANTIC_VERIFICATION",
+    "verification_status": "VERIFIED",
+    "verified": true
+  }
+}

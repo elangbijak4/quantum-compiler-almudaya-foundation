@@ -1,0 +1,120 @@
+"""
+Module 4 Package — Quantum Circuit Synthesis.
+
+Exports Foundation specifications, QuantumCircuitIR AST models, validators, serializers,
+Stage 3 synthesis, Stage 4 gate decomposition, Stage 5 equivalence gate, and Stage 6 completion gate APIs.
+"""
+
+from src.module4.foundation import (
+    FiniteDomainContract,
+    FiniteDomainValidationResult,
+    RegisterEncodingSpec,
+    compute_register_encoding_spec,
+    encode_configuration,
+    verify_encoding_injectivity,
+    FiniteHilbertEmbedding,
+    RestrictedUnitaryContract,
+    LogicalPrimitiveGateType,
+    LogicalPrimitiveGate,
+    NUMERICAL_VERIFICATION_TOLERANCE,
+    VerificationLevel,
+    VerificationPolicy,
+)
+from src.module4.circuit_ir import (
+    QuantumCircuitIR,
+    QubitRegister,
+    QubitRef,
+    GateOperation,
+    AncillaDeclaration,
+    CircuitProvenance,
+    RegisterType,
+    AncillaStatus,
+    LogicalGateType,
+    SCHEMA_VERSION,
+    CircuitValidationResult,
+    validate_circuit_ir,
+    serialize_circuit_ir_to_json,
+    deserialize_circuit_ir_from_json,
+)
+from src.module4.synthesis import (
+    TransitionPair,
+    TransitionTable,
+    build_transition_table,
+    AncillaManager,
+    synthesize_qtm_transition,
+    Stage3VerificationResult,
+    verify_transition_realization,
+    execute_circuit_on_bitstring,
+    execute_inverse_circuit_on_bitstring,
+)
+from src.module4.decomposition import (
+    decompose_circuit_ir,
+    Stage4VerificationResult,
+    verify_decomposed_circuit_equivalence,
+)
+from src.module4.equivalence import (
+    Stage5EquivalenceStatus,
+    Stage5StepResult,
+    Stage5EquivalenceResult,
+    EquivalenceGate,
+    verify_end_to_end_equivalence,
+)
+from src.module4.completion import (
+    Stage6CompletionStatus,
+    Stage6CompletionResult,
+    Module4CompletionGate,
+    verify_module4_completion,
+)
+
+__version__ = "0.4.0-alpha"
+
+__all__ = [
+    "FiniteDomainContract",
+    "FiniteDomainValidationResult",
+    "RegisterEncodingSpec",
+    "compute_register_encoding_spec",
+    "encode_configuration",
+    "verify_encoding_injectivity",
+    "FiniteHilbertEmbedding",
+    "RestrictedUnitaryContract",
+    "LogicalPrimitiveGateType",
+    "LogicalPrimitiveGate",
+    "NUMERICAL_VERIFICATION_TOLERANCE",
+    "VerificationLevel",
+    "VerificationPolicy",
+    "QuantumCircuitIR",
+    "QubitRegister",
+    "QubitRef",
+    "GateOperation",
+    "AncillaDeclaration",
+    "CircuitProvenance",
+    "RegisterType",
+    "AncillaStatus",
+    "LogicalGateType",
+    "SCHEMA_VERSION",
+    "CircuitValidationResult",
+    "validate_circuit_ir",
+    "serialize_circuit_ir_to_json",
+    "deserialize_circuit_ir_from_json",
+    "TransitionPair",
+    "TransitionTable",
+    "build_transition_table",
+    "AncillaManager",
+    "synthesize_qtm_transition",
+    "Stage3VerificationResult",
+    "verify_transition_realization",
+    "execute_circuit_on_bitstring",
+    "execute_inverse_circuit_on_bitstring",
+    "decompose_circuit_ir",
+    "Stage4VerificationResult",
+    "verify_decomposed_circuit_equivalence",
+    "Stage5EquivalenceStatus",
+    "Stage5StepResult",
+    "Stage5EquivalenceResult",
+    "EquivalenceGate",
+    "verify_end_to_end_equivalence",
+    "Stage6CompletionStatus",
+    "Stage6CompletionResult",
+    "Module4CompletionGate",
+    "verify_module4_completion",
+]
