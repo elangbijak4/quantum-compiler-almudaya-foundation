@@ -15,7 +15,7 @@ This **Quantum Compiler** project was created by **Almudaya Quantum Labs**.
 
 We would like to extend our special credits and appreciation to:
 - **Universitas Muhammadiyah Ponorogo**, Fakultas Teknik, Program Studi Teknik Informatika
-- **Almudaya Research Institute**
+- **Almudaya Research Institute Yogyakarta**
 
 ## Tutorials
 
