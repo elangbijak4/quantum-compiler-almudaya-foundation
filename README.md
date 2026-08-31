@@ -9,6 +9,32 @@ verification, and certification.
 
 ---
 
+## Attribution & Credits
+
+This **Quantum Compiler** project was created by **Almudaya Quantum Labs**. 
+
+We would like to extend our special credits and appreciation to:
+- **Universitas Muhammadiyah Ponorogo**, Fakultas Teknik, Program Studi Teknik Informatika
+- **Almudaya Research Institute**
+
+## Tutorials
+
+To understand how to use and navigate this project, please refer to our comprehensive tutorials:
+- [00 CLI Quickstart](tutorial/00_cli_quickstart.md)
+- [01 Command Reference](tutorial/01_command_reference.md)
+- [02 Pipeline Workflow](tutorial/02_pipeline_workflow.md)
+- [03 Stepwise Workflow](tutorial/03_stepwise_workflow.md)
+- [04 Artifact Chain](tutorial/04_artifact_chain.md)
+- [05 Research, Run, and Output](tutorial/05_research_run_and_output.md)
+- [06 Simulation and Shots](tutorial/06_simulation_and_shots.md)
+- [07 Verification](tutorial/07_verification.md)
+- [08 Lineage and Provenance](tutorial/08_lineage_and_provenance.md)
+- [09 JSON and Automation](tutorial/09_json_and_automation.md)
+- [10 Researcher Workflow](tutorial/10_researcher_workflow.md)
+- [Maintenance Guide](tutorial/MAINTENANCE.md)
+
+---
+
 ## 1. Project Vision
 
 The long-term compiler pipeline is:
