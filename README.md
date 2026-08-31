@@ -17,6 +17,22 @@ We would like to extend our special credits and appreciation to:
 - **Universitas Muhammadiyah Ponorogo**, Fakultas Teknik, Program Studi Teknik Informatika
 - **Almudaya Research Institute Yogyakarta**
 
+## License Status
+
+🔒 Proprietary / All Rights Reserved
+
+This project is currently in a pre-release development phase.
+
+The source code is publicly visible for transparency,
+research, architectural discussion, and evaluation.
+
+No license is currently granted for copying, modification,
+redistribution, commercial use, or creation of derivative works
+without prior written permission.
+
+The licensing model may change when the project reaches
+a stable release.
+
 ## Tutorials
 
 To understand how to use and navigate this project, please refer to our comprehensive tutorials:
