@@ -6,7 +6,7 @@ copyrighted works.
 
 No license is granted to any person or entity to:
 
-- copy the source code;
+- copying source code not for research purposes;
 - modify or create derivative works;
 - distribute or redistribute the source code;
 - sublicense the software;
